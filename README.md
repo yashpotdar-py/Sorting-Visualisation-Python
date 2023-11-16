@@ -1,2 +1,2 @@
 # Sorting-Visualisation-Python
- Visualisation of sorting algorithms using PyGame
+ Visualisation of sorting algorithms
