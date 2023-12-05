@@ -1,5 +1,6 @@
 from icecream import ic
 
+
 class SortingAlgorithm:
     def __init__(self, array) -> None:
         self.array = array

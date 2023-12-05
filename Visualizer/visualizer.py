@@ -1,7 +1,6 @@
-import random
-from icecream import ic
-import matplotlib.pyplot as plt
 import matplotlib.animation as anim
+import matplotlib.pyplot as plt
+from icecream import ic
 
 
 class SortVisualizer:
@@ -29,7 +28,7 @@ class SortVisualizer:
 
     def visualize(self):
         self.title = f"Sorting Algorithm Visualization: {
-            type(self.sorting_algorithm).__name__}"
+        type(self.sorting_algorithm).__name__}"
         self.bar_rec = self.ax.bar(
             range(len(self.array)), self.array, align='edge')
         self.ax.set_title(self.title)
@@ -38,8 +37,9 @@ class SortVisualizer:
         algo_generator = self.sorting_algorithm.sort()
         # Adjust the interval to slow down the animation
         anima = anim.FuncAnimation(
-            self.fig, func=self.update_plot, frames=algo_generator, fargs=(self.bar_rec,), interval=0, repeat=False, cache_frame_data=False
+            self.fig, func=self.update_plot, frames=algo_generator, fargs=(self.bar_rec,), interval=0, repeat=False,
+            cache_frame_data=False
         )
-        plt.show(block=False) # Adjust the duration as needed
+        plt.show(block=False)  # Adjust the duration as needed
         plt.close(self.fig)  # Close the figure after a specified duration
         ic(self.text)

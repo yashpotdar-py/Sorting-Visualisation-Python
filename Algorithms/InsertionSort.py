@@ -1,6 +1,8 @@
-from Algorithms.Algorithm import SortingAlgorithm
-from icecream import ic
 import time
+
+from icecream import ic
+
+from Algorithms.Algorithm import SortingAlgorithm
 
 
 class InsertionSort(SortingAlgorithm):
@@ -13,10 +15,10 @@ class InsertionSort(SortingAlgorithm):
 
             while y >= 0 and key < self.array[y]:
                 self.array[y], self.array[y +
-                                          1] = self.array[y+1], self.array[y]
+                                          1] = self.array[y + 1], self.array[y]
                 y -= 1
 
-            self.array[y+1] = key
+            self.array[y + 1] = key
             yield self.array
 
         end_time = time.time()  # Record the end time

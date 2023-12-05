@@ -1,6 +1,8 @@
-from Algorithms.Algorithm import SortingAlgorithm
-from icecream import ic
 import time
+
+from icecream import ic
+
+from Algorithms.Algorithm import SortingAlgorithm
 
 
 class ShellSort(SortingAlgorithm):

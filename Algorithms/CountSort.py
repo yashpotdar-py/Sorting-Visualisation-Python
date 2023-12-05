@@ -1,11 +1,13 @@
-from Algorithms.Algorithm import SortingAlgorithm
-from icecream import ic
 import time
+
+from icecream import ic
+
+from Algorithms.Algorithm import SortingAlgorithm
 
 
 class CountSort(SortingAlgorithm):
     def sort(self):
-        start_time = time.time() 
+        start_time = time.time()
 
         max_val = max(self.array) + 1
         count = [0] * max_val

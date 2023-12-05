@@ -1,14 +1,15 @@
 import random
+
 from icecream import ic
-import matplotlib.pyplot as pt
+
 from Algorithms.BubbleSort import BubbleSort
+from Algorithms.CountSort import CountSort
+from Algorithms.HeapSort import HeapSort
 from Algorithms.InsertionSort import InsertionSort
+from Algorithms.MergeSort import MergeSort
 from Algorithms.QuickSort import QuickSort
 from Algorithms.SelectionSort import SelectionSort
-from Algorithms.MergeSort import MergeSort
-from Algorithms.HeapSort import HeapSort
 from Algorithms.ShellSort import ShellSort
-from Algorithms.CountSort import CountSort
 from Visualizer.visualizer import SortVisualizer
 
 
